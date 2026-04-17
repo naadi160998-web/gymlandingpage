@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Header Styles */
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .header h1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.5rem;
+        font-style: italic;
+        color: #CCFF00;
+    }
+
+    .header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .header nav ul li a {
+        text-decoration: none;
+        color: #ADABAA;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-variant-caps: all-petite-caps;
+        font-size: 1.25rem;
+    }
+
+    .header .action-section {
+        display: flex;
+        gap: 20px;
+    }
+
+    .header .action-section button {
+        border: none;
+        border-radius: 10px;
+        padding: 5px 20px;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .header .action-section .btn1 {
+        background-color: transparent;
+    }
+
+    .header .action-section .btn2 {
+        background-color: #CCFF00;
+        color: rgb(0, 0, 0);
+    }
+
+    .toggle-nav {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 40px;
+    }
+
+    @media (max-width:768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            display: none;
+        }
+
+        .toggle-nav {
+            display: block;
+        }
+
+        .header nav ul {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .header .action-section {
+            margin-top: 10px;
+        }
+
+    }
+
+    /* Hero Section Styles */
+
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("young-fitness-man-studio.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .hero-section section {
+        font-family: 'Space Grotesk', sans-serif;
+        color: white;
+        max-width: 500px;
+        word-wrap: break-word;
+    }
+
+    .hero-section section h1 {
+        font-size: 5.5rem;
+        margin-bottom: 20px;
+        line-height: 1;
+        font-style: italic;
+    }
+
+    .hero-section section p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+        color: #5D5F5F;
+    }
+
+    .hero-section-footer {
+        display: flex;
+    }
+
+    .hero-section button {
+        border: none;
+        border-radius: 10px;
+        padding: 16px 32px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .hero-section .btn1 {
+        background-color: #CCFF00;
+        color: rgb(0, 0, 0);
+        margin-right: 20px;
+    }
+
+    .hero-section .btn2 {
+        background-color: #2F3131;
+        color: white;
+    }
+
+    @media (max-width:768px) {
+        .hero-section {
+            padding: 20px;
+            justify-content: center;
+            background-position: right;
+        }
+
+        .hero-section section {
+            max-width: 300px;
+        }
+
+        .hero-section section h1 {
+            font-size: 3rem;
+        }
+
+        .hero-section section p {
+            font-size: 1rem;
+        }
+
+        .hero-section-footer {
+            flex-direction: column;
+        }
+
+        .hero-section .btn1 {
+            margin-bottom: 10px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <button class="toggle-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ADABAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        </button>
+        <div class="header">
+            <button class="toggle-nav" id="toggle-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ADABAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+        </button>
+            <h1>HIGH-VELOCITY ATHLETICS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="action-section">
+                <button class="btn1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ADABAA"
+                        class="icon icon-tabler icons-tabler-filled icon-tabler-shopping-cart">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M6 2a1 1 0 0 1 .993 .883l.007 .117v1.068l13.071 .935a1 1 0 0 1 .929 1.024l-.01 .114l-1 7a1 1 0 0 1 -.877 .853l-.113 .006h-12v2h10a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176c.017 -.288 .074 -.564 .166 -.824h-5.342a3 3 0 1 1 -5.824 1.176l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-12.17h-1a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 .883 -.993l.117 -.007h2zm0 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m11 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2" />
+                    </svg>
+                </button>
+                <button class="btn2">JOIN NOW</button>
+            </div>
+        </div>
+        <div class="hero-section">
+            <section>
+                <h1>RISE ABOVE THE REST</h1>
+                <p>
+                    Engineered for high-performance humans. We provide the tools. the technology. and the intensity
+                    required
+                    to
+                    shatter plateaus.
+                </p>
+                <div class="hero-section-footer">
+                    <button class="btn1">JOIN NOW</button>
+                    <button class="btn2">VIEW PROGRAMS</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const toggleNav = document.querySelector('.toggle-nav');
+        const header = document.querySelector('.header');
+        const toggleClose = document.getElementById('toggle-close');
+
+        toggleNav.addEventListener('click', () => {
+            header.style.display = 'flex';
+        });
+
+        toggleClose.addEventListener('click', () => {
+            header.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
