@@ -228,11 +228,13 @@ body {
 
 @media (max-width:768px) {
     .flex-section-3 .content h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    text-align: center;
 }
 
 .flex-section-3 .content p {
     font-size: 0.50rem;
+    text-align: center;
 }
 .flex-section-3 .content .vr {
     height: 40px;
@@ -241,13 +243,13 @@ body {
 
 }
 
-@media (max-width:425px) {
+/* @media (max-width:425px) {
     .flex-section-3 .content h3 {
-    font-size: 1.50rem;
+    font-size: 1.75rem;
 }
 
 .flex-section-3 .content p {
     font-size: 0.50rem;
 }
 
-}
+} */
