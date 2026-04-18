@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color--: #CCFF00;
+    --secondary-color--: #ADABAA;
+    --btn2--: #2F3131;
+    --p--: #5D5F5F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--primary-color--);
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color--);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.25rem;
+}
+
+.header .action-section {
+    display: flex;
+    gap: 20px;
+}
+
+.header .action-section button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.header .action-section .btn1 {
+    background-color: transparent;
+}
+
+.header .action-section .btn2 {
+    background-color: var(--primary-color--);
+    color: rgb(0, 0, 0);
+}
+
+.toggle-nav {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+}
+
+@media (max-width:768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .header .action-section {
+        margin-top: 10px;
+    }
+
+}
+
+/* Hero Section Styles */
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/young-fitness-man-studio.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.hero-section section {
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+.hero-section section h1 {
+    font-size: 5.5rem;
+    margin-bottom: 20px;
+    line-height: 1;
+    font-style: italic;
+}
+
+.hero-section section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: var(--p--);
+}
+
+.hero-section-footer {
+    display: flex;
+}
+
+.hero-section button {
+    border: none;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero-section .btn1 {
+    background-color: var(--primary-color--);
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+}
+
+.hero-section .btn2 {
+    background-color: var(--btn2--);
+    color: white;
+}
+
+@media (max-width:768px) {
+    .hero-section {
+        padding: 20px;
+        justify-content: center;
+        background-position: right;
+    }
+
+    .hero-section section {
+        max-width: 300px;
+    }
+
+    .hero-section section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section section p {
+        font-size: 1rem;
+    }
+
+    .hero-section-footer {
+        flex-direction: column;
+    }
+
+    .hero-section .btn1 {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* flex-section-3 */
+.flex-section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #0c0c0c;
+    gap: 20px;
+}
+
+.flex-section-3 .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    line-height: 0.5;
+}
+
+.flex-section-3 .content .vr {
+    background-color: #202020;
+    width: 0.5px;
+    height: 70px;
+    margin-top: 25px;
+}
+
+.flex-section-3 .content h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    color: var(--primary-color--);
+    margin-bottom: 10px;
+}
+
+.flex-section-3 .content p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    color: var(--p--);
+}
+
+@media (max-width:768px) {
+    .flex-section-3 .content h3 {
+    font-size: 1.25rem;
+}
+
+.flex-section-3 .content p {
+    font-size: 0.50rem;
+}
+.flex-section-3 .content .vr {
+    height: 40px;
+    margin-top: 10px;
+}
+
+}
+
+@media (max-width:425px) {
+    .flex-section-3 .content h3 {
+    font-size: 0.85rem;
+}
+
+.flex-section-3 .content p {
+    font-size: 0.50rem;
+}
+
+}
