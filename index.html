@@ -10,6 +10,7 @@
 
 <body>
     <div class="container">
+        <!-- Header -->
         <button class="toggle-nav">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="#ADABAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -20,7 +21,7 @@
                 <path d="M4 18l16 0" />
             </svg>
         </button>
-        <div class="header">
+        <div class="header-section">
             <button class="toggle-nav" id="toggle-close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="#ADABAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -51,6 +52,7 @@
                 <button class="btn2">JOIN NOW</button>
             </div>
         </div>
+        <!-- Hero Section -->
         <div class="hero-section">
             <section>
                 <h1>RISE ABOVE THE REST</h1>
@@ -66,6 +68,7 @@
                 </div>
             </section>
         </div>
+        <!-- Flex Section 3 -->
         <div class="flex-section-3">
             <div class="content">
                 <div>
@@ -88,6 +91,45 @@
                 </div>
             </div>
         </div>
+        <!-- Services Section -->
+        <div class="services-section">
+            <div class="service-header">
+                <h2>SERVICES</h2>
+                <hr>
+                <p>PRECISION EXECUITION</p>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="./slides/1.jpg" alt="Service 1">
+                        <div class="title-section">
+                            <div class="title-box">
+                                <h3 class="slide-heading">STRENGTH TRAINING</h3>
+                                <p class="wrap slide-para">Olympic platforms, rogue equipment, and zero excuses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./slides/2.jpg" alt="Service 2">
+                        <div class="title-section">
+                            <div class="title-box">
+                                <h3 class="slide-heading">ENDURANCE TRAINING</h3>
+                                <p class="wrap slide-para">High-intensity metabolic conditioning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./slides/3.jpg" alt="Service 3">
+                        <div class="title-section">
+                            <div class="title-box">
+                                <h3 class="slide-heading">RECOVERY</h3>
+                                <p class="wrap slide-para">Recovery good.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -103,6 +145,8 @@
             header.style.display = 'none';
         });
     </script>
+
+    <script src="./slides/slide.js"></script>
 </body>
 
 </html>
